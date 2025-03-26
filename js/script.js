@@ -14,18 +14,17 @@ button.addEventListener(`click`, function(){
 if(age.value < 18){
 
     prezzo*= 0.8;
-    message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed(2)}`
+    message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed(2)}&euro;`
     console.log (message)
 }
 else if(age.value > 65){
 
     prezzo*= 0.6;
-    message= `hai diritto ad uno sconto del 40% il prezzo è di ${prezzo.toFixed(2)}`
+    message= `hai diritto ad uno sconto del 40% il prezzo è di ${prezzo.toFixed(2)}&euro;`
     console.log (message)
 }
 else{
-    message= `il prezzo è di ${prezzo.toFixed(2)}`
+    message= `il prezzo è di ${prezzo.toFixed(2)}&euro;`
     console.log (message)
 }
 })
-// Risultato finale

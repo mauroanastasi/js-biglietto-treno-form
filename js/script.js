@@ -34,7 +34,7 @@ button.addEventListener(`click`, function(event){
     prezzo = km.value * 0.21;
     
     
-    if(age.value < 18){
+if(age.value < 18){
         
     prezzo*= 0.8;
     message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed(2)}&euro;`

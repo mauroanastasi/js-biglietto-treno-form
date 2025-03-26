@@ -3,23 +3,23 @@
 
 const age = document.getElementById(`mettiEtà`);
 const km = document.getElementById(`mettiKm`);
-const button = document.querySelector(`pulsanteInvia`)
-let prezzo = km * 0.21;
+const button = document.querySelector(`.pulsanteInvia`)
+let prezzo = km.value * 0.21;
 let message;
 
 // Corpo del programma
 button.addEventListener(`click`, function(){
-if(age < 18){
+if(km.value < 18){
     prezzo= prezzo *0.8
-    message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed}`
+    message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed(2)}`
 }
-else if(age > 65){
+else if(age.value > 65){
     prezzo= prezzo *0.6
-    message= `hai diritto ad uno sconto del 40% il prezzo è di ${prezzo.toFixed}`
+    message= `hai diritto ad uno sconto del 40% il prezzo è di ${prezzo.toFixed(2)}`
 }
 else{
     prezzo= prezzo *0.8
-    message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed}`
+    message= `hai diritto ad uno sconto del 20% il prezzo è di ${prezzo.toFixed(2)}`
 }
 })
 // Risultato finale
